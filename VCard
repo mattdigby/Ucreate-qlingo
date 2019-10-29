@@ -11,3 +11,6 @@ ADR:"&@{ADDRESS}&"\n
 EMAIL:"&@{Email}&"\n
 URL:"&@{URL var}&"\n
 END:VCARD\n"
+
+
+XMPBarcode("QRCode", "BEGIN:VCARD\nVERSION:4.0\nN:" & |->[First] & " " & |->[Middle] & " " & |->[Last] & "\nORG:" & |->[Company] & "\nTITLE:" & |->[Title] & "\nTEL;TYPE=work,voice:" & |->[Direct] & "\nTEL;TYPE=cell,voice:" & |->[Mobile] & "\nEMAIL:" & |->[Email] & "\nADR;TYPE=work:" & |->[Address1] & "\nEND:VCARD") 
