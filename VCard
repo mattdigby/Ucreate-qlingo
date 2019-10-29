@@ -1,0 +1,13 @@
+"BEGIN:VCARD\n
+VERSION:3.0\n
+N:"&@{Name var}&"\n
+FN:\n
+ORG:"&@{Company var}&"\n
+TITLE:"&@{Position var}&"\n
+TEL;TYPE=WORK,VOICE:"&[BranchAddresses][0].[Tel]&"\n
+TEL;TYPE=MOBILE,VOICE:"&@{Mobile}&"\n
+LABEL;TYPE=WORK:"&[BranchAddresses][0].[Display Name]&"\n
+ADR:"&@{ADDRESS}&"\n
+EMAIL:"&@{Email}&"\n
+URL:"&@{URL var}&"\n
+END:VCARD\n"
